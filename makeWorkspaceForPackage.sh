@@ -66,5 +66,5 @@ for patchFile in $roaPackageDir/Patch-*; do
     echo "Applying patch $patchFileBasename ..."
     patch -d $TargetDir -p1 < $patchFile
     git -C $TargetDir add --all
-    git -C $TargetDir commit -m "[RoA] Applying $patchFileBaseName"
+    git -C $TargetDir commit -m "[RoA] Applying $patchFileBasename"
 done
